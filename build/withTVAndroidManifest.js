@@ -117,12 +117,12 @@ function addTouchscreenHardwareFeatureToManifest(_config, androidManifest, param
             },
         });
         // add android.software.leanback to false
-        androidManifest.manifest['uses-feature']?.push({
-            $: {
-                'android:name': 'android.software.leanback',
-                'android:required': 'false',
-            },
-        });
+        // androidManifest.manifest['uses-feature']?.push({
+        //     $: {
+        //         'android:name': 'android.software.leanback',
+        //         'android:required': 'false',
+        //     },
+        // });
     }
     return androidManifest;
 }
